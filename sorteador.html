@@ -14,60 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="./css/modalIncentivo.css">
+    <link rel="stylesheet" href="./css/sorteador.css" class="css">
 </head>
 
 <body>
-        <!-- MODAL Início -->
-    
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div id="titulo" class="modal-header bg-success p-2 text-white">
-                <h1 class="modal-title fs-4 text-uppercase fw-bolder" id="exampleModalLabel">Não saia agora!</h1>
-                <button id="refresh2" type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-            </div>
-            <div id="conteudo" class="modal-body ">
-
-                <p id="text" class="fs-3">Você está no caminho certo! Continue navegando em nosso site e descubra todas
-                    as possibilidades que temos a oferecer.</p>
-
-                <script language="JavaScript">
-                    var aleatorio = new Array()
-                    aleatorio[0] = '<a href="#"><img src="./images/quadrado/1.png" alt="Não saia agora" height="420" width="420"></a>'
-                    aleatorio[1] = '<a href="#"><img src="./images/quadrado/2.png" alt="Não saia agora" height="420" width="420"></a>'
-                    aleatorio[2] = '<a href="#"><img src="./images/quadrado/3.png" alt="Não saia agora" height="420" width="420"></a>'
-                    aleatorio[3] = '<a href="#"><img src="./images/quadrado/4.png" alt="Não saia agora" height="420" width="420"></a>'
-                    aleatorio[4] = '<a href="#"><img src="./images/quadrado/5.png" alt="Não saia agora" height="420" width="420"></a>'
-                    aleatorio[5] = '<a href="#"><img src="./images/quadrado/6.png" alt="Não saia agora" height="420" width="420"></a>'
-                    aleatorio[6] = '<a href="#"><img src="./images/quadrado/7.png" alt="Não saia agora" height="420" width="420"></a>'
-                    aleatorio[7] = '<a href="#"><img src="./images/quadrado/8.png" alt="Não saia agora" height="420" width="420"></a>'
-                    aleatorio[8] = '<a href="#"><img src="./images/quadrado/9.png" alt="Não saia agora" height="420" width="420"></a>'
-                    aleatorio[9] = '<a href="#"><img src="./images/quadrado/10.jpg" alt="Não saia agora" height="420" width="420"></a>'
-                    aleatorio[10] = '<a href="#"><img src="./images/quadrado/11.jpg" alt="Não saia agora" height="420" width="420"></a>'
-                    var whichquote = Math.floor(Math.random() * (aleatorio.length))
-                    document.write(aleatorio[whichquote])
-                </script>
-
-            </div>
-            <div class="modal-footer">
-                <button id="refresh" type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-<script src="./scripts/modalIncentivo.js"></script>
-
-<!-- MODAL Fim -->
     <header>
         <!-- NAVBAR - INICIO -->
-        <nav class="navbar bg-body-tertiary fixed-top">
+        <nav class="navbar bg-body-tertiary fixed-top border">
             <div class="container-fluid">
                 <img src="./images/logo/GoodPayBanner.png" alt="Logo navbar escrito GOODPAY" id="logo-header" />
                 <a class="navbar-brand" href="#">Escolha o melhor!</a>
@@ -167,7 +120,7 @@
                                 <div id="flush-collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
-                                        <a href="./soulcode.html" target="_blank"
+                                        <a href="https://soulcode.com" target="_blank"
                                             class="btn btn-primary position-relative">
                                             SoulCode Academy
                                             <!-- BADGE - INICIO -->
@@ -190,244 +143,43 @@
         </nav>
         <!-- NAVBAR - FIM -->
     </header>
-
-
     <main class="container">
-        <!-- CAROUSEL - INICIO -->
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                   
-                    <!-- CARD1 - INICIO -->
-                    <div class="card" tabindex="0">
-                        <img src="./images/banner/BannerGoodPay.png" class="d-block w-100" alt="Banner do carousel escrito: Goodpay work for you." />
-                        <div class="card-body">
-                            <h3 class="card-title">Aproveite as promoções de hoje.</h3>
-                            <p class="card-text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
-                                aut magnam recusandae adipisci voluptas eos enim, beatae
-                                asperiores, molestias temporibus unde ex reiciendis
-                                blanditiis? Ullam ducimus iste nisi quisquam eius.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- CARD1 - FIM -->
+        <h3 class="textH3Sorteador">Sorteador</h3>
+        <div class="border border-2 rounded p-3">
+            <form class="formSorteador ">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Max</span>
+                    <input type="text" class="form-control" placeholder="Digite o numero maximo" aria-label="Username"
+                        aria-describedby="basic-addon1" id="maxNumber" required>
                 </div>
-                <div class="carousel-item">
-                    <!-- CARD2 - INICIO -->
-                    <div class="card">
-                        <img src="./images/banner/BannerGoodPay2.png" class="d-block w-100" alt="Banner do carousel escrito: Back to the green side. " />
-                        <div class="card-body">
-                            <h3 class="card-title">Aproveite as promoções de hoje.</h3>
-                            <p class="card-text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
-                                aut magnam recusandae adipisci voluptas eos enim, beatae
-                                asperiores, molestias temporibus unde ex reiciendis
-                                blanditiis? Ullam ducimus iste nisi quisquam eius.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- CARD2 - FIM -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text ps-3" id="basic-addon1">Min</span>
+                    <input type="text" class="form-control" placeholder="Digite o numero minimo" aria-label="Username"
+                        aria-describedby="basic-addon1" id="minNumber" required>
                 </div>
-                <div class="carousel-item">
-                    <!-- CARD3 - INICIO -->
-                    <div class="card">
-                        <img src="./images/banner/BannerGoodPay3.png" class="d-block w-100" alt="Banner do carousel escrito: The pig time." />
-                        <div class="card-body">
-                            <h3 class="card-title">Aproveite as promoções de hoje.</h3>
-                            <p class="card-text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
-                                aut magnam recusandae adipisci voluptas eos enim, beatae
-                                asperiores, molestias temporibus unde ex reiciendis
-                                blanditiis? Ullam ducimus iste nisi quisquam eius.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- CARD3 - FIM -->
+                <div class="form-check form-switch ms-1">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Sem repetição</label>
                 </div>
-                <div class="carousel-item">
-                    <!-- CARD4 - INICIO -->
-                    <div class="card">
-                        <img src="./images/banner/BannerGoodPay4.png" class="d-block w-100" alt="Banner do carousel escrito: GOODPLAY, Dinheiro para curtir o importante." />
-                        <div class="card-body">
-                            <h3 class="card-title">Aproveite as promoções de hoje.</h3>
-                            <p class="card-text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
-                                aut magnam recusandae adipisci voluptas eos enim, beatae
-                                asperiores, molestias temporibus unde ex reiciendis
-                                blanditiis? Ullam ducimus iste nisi quisquam eius.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- CARD4 - FIM -->
+                <div class="d-flex justify-content-end" id="btnSorteador">
+                    <button type="submit" class="btn btn-outline-success mt-2">Sortear</button>
                 </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            </form>
+
+            <h5>Numeros Sorteados:</h5>
+            <ul id="listaSorteio" class="list-group list-group-flush table-striped p-3">
+
+
+            </ul>
         </div>
-        <!-- CAROUSEL - FIM -->
     </main>
 
-
-    <!-- Grid Cards Inicio-->
-
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-3 p-5">
-            <div class="col d-flex justify-content-center" tabindex="0">
-                <a  class="linkimg">
-                    <div class="cards h-100 p-3">
-                        <h6 class="cards-title">Goodpay - Plan</h6>
-                        <img src="./images/quadrado/1.png" class="card-img-bottom" alt="Card 1 escrito: Planeje, faça seu dinheiro render com o planejamento.">
-                        <p class="card-text"><small class="text-muted">Planeje sua vida financeira com a Goodplay plan
-                                Crie possibilidades para sua carreira.</small></p>
-                        <button type="button" class="btn btn-success btn-sm"><a  class="link">Saiba
-                                mais</a></button>
-                    </div>
-                </a>
-            </div>
-
-
-
-            <div class="col d-flex justify-content-center" tabindex="0">
-                <a  class="linkimg">
-
-                    <div class="cards h-100  p-3">
-                        <h6 class="cards-title">Goodplay - clean nature</h6>
-                        <img src="./images/quadrado/2.png" class="card-img-bottom" alt="Card 2 escrito: Gerando economia para quem precisa com link das rede sociais da goodpay.">
-                        <p class="card-text"><small class="text-muted">Visite nossa empresa física Goodplay A favor da natureza Clean nature.
-                            </small></p>
-                        <button type="button" class="btn btn-success btn-sm"><a  class="link">Saiba
-                                mais</a></button>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col d-flex justify-content-center" tabindex="0">
-                <a  class="linkimg">
-
-                    <div class="cards h-100  p-3">
-                        <h6 class="cards-title">Goodpay – app</h6>
-                        <img src="./images/quadrado/3.png" class="card-img-bottom" alt="Card 3 escrito: goodpay para gastar com responsabilidade escrito de forma circular.">
-                        <p class="card-text"><small class="text-muted">Confira nosso app para IOS – ANDROID
-                                Nosso trabalho de qualquer local.</small></p>
-                        <button type="button" class="btn btn-success btn-sm"><a  class="link">Saiba mais</a></button>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col d-flex justify-content-center" tabindex="0">
-                <a  class="linkimg">
-
-                    <div class="cards h-100  p-3">
-                        <h6 class="cards-title">Goodpay – Money for live</h6>
-                        <img src="./images/quadrado/4.png" class="card-img-bottom" alt="Card 4 escrito: Money for live com o logo da goodpay em baixo.">
-                        <p class="card-text"><small class="text-muted">Dinheiro não traz felicidade?
-                                Na Goodpay você é feliz e sua carteira também!</small></p>
-                        <button type="button" class="btn btn-success btn-sm"><a  class="link">Saiba
-                                mais</a></button>
-                    </div>
-                </a>
-            </div>
-
-
-            <div class="col d-flex justify-content-center" tabindex="0">
-                <a  class="linkimg">
-                    <div class="cards h-100  p-3">
-                        <h6 class="cards-title">Goodpay – Promo</h6>
-                        <img src="./images/quadrado/5.png" class="card-img-bottom" alt="Card 5 escrito: Black Friday goodpay com 50% de desconto.">
-                        <p class="card-text"><small class="text-muted">Black Friday na Goodpay
-                                Caso seja cliente de longa data 50% de desconto!</small></p>
-                        <button type="button" class="btn btn-success btn-sm"><a  class="link">Saiba
-                                mais</a></button>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col d-flex justify-content-center" tabindex="0">
-                <a  class="linkimg">
-                    <div class="cards h-100  p-3">
-                        <h6 class="cards-title">Goodpay - draw a life</h6>
-                        <img src="./images/quadrado/6.png" class="card-img-bottom" alt="Card 6 escrito: Economia financiando a educação do maior projeto da sua vida com um menino negro ao fundo segurando um livro.">
-                        <p class="card-text"><small class="text-muted"> Doe 1 real para caridade
-                                E ganhe promoções na Goodpay.</small></p>
-                        <button type="button" class="btn btn-success btn-sm"><a  class="link">Saiba
-                                mais</a></button>
-                    </div>
-                </a>
-
-            </div>
-
-            <div class="col d-flex justify-content-center" tabindex="0">
-                <a  class="linkimg">
-                    <div class="cards h-100  p-3">
-                        <h6 class="cards-title">Goodpay - leisure</h6>
-                        <img src="./images/quadrado/7.png" class="card-img-bottom" alt="Card 7 escrito: Reserve para pequenos pecados; lazer e qualidade de vida ao lado de uma xícada de café com leite.">
-                        <p class="card-text"><small class="text-muted">Compre na Goodpay
-                                E use seus créditos para seu lazer</small></p>
-                        <button type="button" class="btn btn-success btn-sm"><a  class="link">Saiba
-                                mais</a></button>
-                    </div>
-                </a>
-            </div>
-            <div class="col d-flex justify-content-center" tabindex="0">
-                <a  class="linkimg">
-
-                    <div class="cards h-100  p-3">
-                        <h6 class="cards-title">Goodpay – cartões</h6>
-                        <img src="./images/quadrado/8.png" class="card-img-bottom" alt="Card 7 escrito: Poupe no cartão e ganhe na vida com cartões de crédito ao fundo.">
-                        <p class="card-text"><small class="text-muted">Peça logo seu cartão
-                                Com ele a Goodpay disponibiliza protudos vip.</small></p>
-                        <button type="button" class="btn btn-success btn-sm"><a  class="link">Saiba
-                                mais</a></button>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col d-flex justify-content-center" tabindex="0">
-                <a  class="linkimg">
-                
-                    <div class="cards h-100  p-3">
-                        <h6 class="cards-title">Goodpay – cash back </h6>
-                        <img src="./images/quadrado/9.png" class="card-img-bottom" alt="Card 9 escrito: Cash to get back in the game com uma máquina registradora ao fundo.">
-                        <p class="card-text"><small class="text-muted"> Usando seus créditos na Goodpay
-                                Você recebe 5% de cash back.</small></p>
-                        <button type="button" class="btn btn-success btn-sm"><a href="" class="link">Saiba
-                                mais</a></button>
-                    </div>
-                </a>
-            
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Grid Cards Fim-->
-
-
-
     <!-- Footer Inicio -->
-    <footer class="footer-distributed" tabindex="0">
+    <footer class="footer-distributed border" tabindex="0">
         <div id="principal">
             <div class="footer-left">
-                <img id="logoFooter" src="./images/logo/goodplayH.png" alt="Logo escrito goodpay localizada no footer da página." />
+                <img id="logoFooter" src="./images/logo/goodplayH.png"
+                    alt="Logo escrito goodpay localizada no footer da página." />
 
                 <p class="footer-links">
                     <a href="#" class="link-1">Home</a>
@@ -528,20 +280,7 @@
     </footer>
     <!-- Footer Fim -->
 
-    <!-- Toast Geolocalização -->
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-        <div id="geolocationToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-                <img src="./images/logo/GoodPay.png" class="rounded me-2" alt="Logo GoodPay">
-                <strong class="me-auto">Bem-vindo(a)!</strong>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body">
-                <p id="text-geolocation">Não foi possível recuperar sua localização.</p>
-            </div>
-        </div>
-    </div>
-    <!-- FIM Toast Geolocalização -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
@@ -549,17 +288,18 @@
     <script src="./scripts/geolocation-script.js"></script>
 
     <!-- Implementação do plugin de acessibilidade VLIBRAS -->
-    
-     <div vw class="enabled">
+
+    <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
+    </div>
+    <script src="./scripts/sorteador.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
+    </script>
 </body>
 
 </html>
